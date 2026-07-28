@@ -2,7 +2,9 @@
 
 ```sh
 (openfe) $ openfe plan-rbfe-network -M Vu2025_hybrid_docked.sdf -p 9S9P-clean_complex_relaxed_apo.cif -o network_setup --n-protocol-repeats 1 -s settings.yaml 
+```
 
+```sh
 RBFE-NETWORK PLANNER
 ______________________
 
@@ -69,10 +71,10 @@ Output:
 # Run
 
 ```sh
-# one transformation
 (openfe) $ openfe quickrun network_setup/transformations/rbfe_Vu2025_01_1_solvent_Vu2025_05_1_solvent.json -o results/rbfe_Vu2025_01_1_solvent_Vu2025_05_1_solvent.json -d results/rbfe_Vu2025_01_1_solvent_Vu2025_05_1_solvent/
 ```
 
+# Slurm Jobs
 
 ```
 #!/usr/bin/bash
