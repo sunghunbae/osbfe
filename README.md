@@ -20,7 +20,7 @@ Vu BT, Dominique R, Fahr BJ, Li HH, Fry DC, Xu L, Yang H, Puzio-Kuter A, Good A,
 
 ## Receptor Structure Preparation
 
-The protein-ligand complex structures were processed by [mdworks](https://gihub.com/sunghunbae/mdworks). Remove the rezataopopt from `9S9O-clean_complex_relaxed.cif.gz` or `9S9O-clean_complex_relaxed.pdb.gz` and use as receptor for OpenFE.
+The protein-ligand complex structures were processed by [mdworks](https://github.com/sunghunbae/mdworks). Remove the rezataopopt from `9S9O-clean_complex_relaxed.cif.gz` or `9S9O-clean_complex_relaxed.pdb.gz` and use as receptor for OpenFE.
 
 ```sh
 $ pip install mdworks
