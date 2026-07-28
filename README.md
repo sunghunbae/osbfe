@@ -3,12 +3,8 @@
 ```sh
 $ mamba create -n openfe cuda-version=13.1 openfe
 $ mamba activate openfe
+$ pip install mdworks
 ```
-
-# Setup
-
-```sh
-$ openfe plan-rbfe
 
 # Vu2025/
 
