@@ -1,0 +1,8 @@
+2026-07-28 10:20:INFO:mdworks.editor:selected residues: {'A': 0, 'B': 0, 'C': 1}
+2026-07-28 10:21:INFO:mdworks.editor:selected residues: {'A': 0, 'B': 0, 'C': 0}
+2026-07-28 10:21:INFO:mdworks.editor:selected residues: {'A': 0, 'B': 0, 'C': 1}
+2026-07-28 10:22:INFO:mdworks.editor:selected residues: {'A': 0, 'B': 0, 'C': 1}
+2026-07-28 10:27:INFO:mdworks.editor:selected residues: {'A': 0, 'B': 0, 'C': 1}
+2026-07-28 11:17:INFO:mdworks.editor:select residues: {'C': 1} (70 atoms)
+2026-07-28 11:17:INFO:mdworks.editor:remove selected
+2026-07-28 11:17:INFO:mdworks.editor:write to 9S9O-clean_complex_relaxed_apo.cif
