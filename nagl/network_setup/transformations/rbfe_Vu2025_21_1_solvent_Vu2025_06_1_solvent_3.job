@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-openfe quickrun network_setup/transformations/rbfe_Vu2025_21_1_solvent_Vu2025_06_1_solvent.json -o results/replicate_3/rbfe_Vu2025_21_1_solvent_Vu2025_06_1_solvent.json -d results/replicate_3/rbfe_Vu2025_21_1_solvent_Vu2025_06_1_solvent
