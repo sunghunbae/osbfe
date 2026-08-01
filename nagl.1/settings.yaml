@@ -1,8 +1,7 @@
 mapper:
     method: kartograf
     settings: 
-        #atom_max_distance: 0.95
-        atom_max_distance: 1.15
+        atom_max_distance: 0.95
         atom_map_hydrogens: true
         map_hydrogens_on_hydrogens_only: true
         map_exact_ring_matches_only: true

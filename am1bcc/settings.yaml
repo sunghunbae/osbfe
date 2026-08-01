@@ -13,10 +13,10 @@ network:
     method: generate_minimal_spanning_network
 
 partial_charge:
-    # method: am1bcc
+    method: am1bcc
     # method: am1bccelf10
     # method: espaloma
-    method: nagl
+    #method: nagl
     settings: 
         # off_toolkit_backend: ambertools
         # off_toolkit_backend: openeye  # required for the am1bccelf10 method
