@@ -82,3 +82,61 @@ openfe plan-rbfe-network \
     -o network_setup \
     -s settings.yaml
 ```
+
+### am1bcc `settings.yaml`
+
+```sh
+mapper:
+    method: kartograf
+    settings:
+        #atom_max_distance: 0.95
+        atom_max_distance: 1.15
+        atom_map_hydrogens: true
+        map_hydrogens_on_hydrogens_only: true
+        map_exact_ring_matches_only: true
+        allow_partial_fused_rings: true
+        allow_bond_breaks: false
+
+network:
+    method: generate_minimal_spanning_network
+
+partial_charge:
+    method: am1bcc
+    # method: am1bccelf10
+    # method: espaloma
+    #method: nagl
+    settings:
+        # off_toolkit_backend: ambertools
+        # off_toolkit_backend: openeye  # required for the am1bccelf10 method
+        number_of_conformers: null  # null specifies the use of the input conformer, a value requests that a new conformer be generated
+        nagl_model: null  # null specifies the use of the latest nagl model
+```
+
+### nagl `setttings.yaml`
+
+```sh
+mapper:
+    method: kartograf
+    settings:
+        #atom_max_distance: 0.95
+        atom_max_distance: 1.15
+        atom_map_hydrogens: true
+        map_hydrogens_on_hydrogens_only: true
+        map_exact_ring_matches_only: true
+        allow_partial_fused_rings: true
+        allow_bond_breaks: false
+
+network:
+    method: generate_minimal_spanning_network
+
+partial_charge:
+    # method: am1bcc
+    # method: am1bccelf10
+    # method: espaloma
+    method: nagl
+    settings:
+        # off_toolkit_backend: ambertools
+        # off_toolkit_backend: openeye  # required for the am1bccelf10 method
+        number_of_conformers: null  # null specifies the use of the input conformer, a value requests that a new conformer be generated
+        nagl_model: null  # null specifies the use of the latest nagl model
+```
