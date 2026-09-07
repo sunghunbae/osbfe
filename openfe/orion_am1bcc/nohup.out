@@ -1,0 +1,76 @@
+Generating charges:   0%|                                | 0/17 [00:00<?, ?it/s]Generating charges:  12%|██▊                     | 2/17 [01:50<13:50, 55.34s/it]Generating charges:  18%|████                   | 3/17 [05:32<29:03, 124.56s/it]Generating charges:  24%|█████▍                 | 4/17 [08:24<30:50, 142.38s/it]Generating charges:  29%|██████▊                | 5/17 [10:48<28:33, 142.83s/it]Generating charges:  35%|████████               | 6/17 [13:54<28:51, 157.43s/it]Generating charges:  41%|█████████▍             | 7/17 [17:10<28:15, 169.54s/it]Generating charges:  47%|██████████▊            | 8/17 [19:10<23:06, 154.06s/it]Generating charges:  53%|████████████▏          | 9/17 [20:25<17:15, 129.48s/it]Generating charges:  59%|████████████▉         | 10/17 [24:21<18:55, 162.27s/it]Generating charges:  65%|██████████████▏       | 11/17 [28:33<18:57, 189.60s/it]Generating charges:  71%|███████████████▌      | 12/17 [32:51<17:31, 210.36s/it]Generating charges:  76%|████████████████▊     | 13/17 [36:05<13:42, 205.55s/it]Generating charges:  82%|██████████████████    | 14/17 [38:26<09:18, 186.05s/it]Generating charges:  88%|███████████████████▍  | 15/17 [40:00<05:16, 158.37s/it]Generating charges:  94%|████████████████████▋ | 16/17 [41:21<02:15, 135.02s/it]Generating charges: 100%|██████████████████████| 17/17 [42:53<00:00, 122.01s/it]Generating charges: 100%|██████████████████████| 17/17 [42:53<00:00, 151.38s/it]
+creating ligand network using /home2/shbae/devel/osbfe/Vu2025/orion_edgemap_output.dat ...
+/home2/shbae/miniforge3/envs/openfe/lib/python3.13/multiprocessing/popen_fork.py:73: DeprecationWarning: This process (pid=1007792) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+/home2/shbae/miniforge3/envs/openfe/lib/python3.13/multiprocessing/popen_fork.py:73: DeprecationWarning: This process (pid=1007792) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+/home2/shbae/miniforge3/envs/openfe/lib/python3.13/multiprocessing/popen_fork.py:73: DeprecationWarning: This process (pid=1007792) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+/home2/shbae/miniforge3/envs/openfe/lib/python3.13/multiprocessing/popen_fork.py:73: DeprecationWarning: This process (pid=1007792) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+/home2/shbae/miniforge3/envs/openfe/lib/python3.13/multiprocessing/popen_fork.py:73: DeprecationWarning: This process (pid=1007792) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+/home2/shbae/miniforge3/envs/openfe/lib/python3.13/multiprocessing/popen_fork.py:73: DeprecationWarning: This process (pid=1007792) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+/home2/shbae/miniforge3/envs/openfe/lib/python3.13/multiprocessing/popen_fork.py:73: DeprecationWarning: This process (pid=1007792) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+/home2/shbae/miniforge3/envs/openfe/lib/python3.13/multiprocessing/popen_fork.py:73: DeprecationWarning: This process (pid=1007792) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+/home2/shbae/miniforge3/envs/openfe/lib/python3.13/multiprocessing/popen_fork.py:73: DeprecationWarning: This process (pid=1007792) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+/home2/shbae/miniforge3/envs/openfe/lib/python3.13/multiprocessing/popen_fork.py:73: DeprecationWarning: This process (pid=1007792) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+creating transformations ...
+writing 52 transformations ...
+  ( 1) network_setup/transformations/rbfe_Vu2025_09_1_solvent_Vu2025_07_1_solvent.json
+  ( 2) network_setup/transformations/rbfe_Vu2025_01_1_complex_Vu2025_03_1_complex.json
+  ( 3) network_setup/transformations/rbfe_Vu2025_02_1_complex_Vu2025_11_1_complex.json
+  ( 4) network_setup/transformations/rbfe_Vu2025_02_1_solvent_Vu2025_01_1_solvent.json
+  ( 5) network_setup/transformations/rbfe_Vu2025_21_1_complex_Vu2025_13_1_complex.json
+  ( 6) network_setup/transformations/rbfe_Vu2025_11_1_complex_Vu2025_13_1_complex.json
+  ( 7) network_setup/transformations/rbfe_Vu2025_05_1_solvent_Vu2025_04_1_solvent.json
+  ( 8) network_setup/transformations/rbfe_Vu2025_07_1_solvent_Vu2025_03_1_solvent.json
+  ( 9) network_setup/transformations/rbfe_Vu2025_11_1_solvent_Vu2025_13_1_solvent.json
+  (10) network_setup/transformations/rbfe_Vu2025_21_1_complex_Vu2025_14_1_complex.json
+  (11) network_setup/transformations/rbfe_Vu2025_06_1_complex_Vu2025_04_1_complex.json
+  (12) network_setup/transformations/rbfe_A1JMR_complex_Vu2025_13_1_complex.json
+  (13) network_setup/transformations/rbfe_Vu2025_08_1_solvent_Vu2025_10_1_solvent.json
+  (14) network_setup/transformations/rbfe_Vu2025_22_1_complex_Vu2025_14_1_complex.json
+  (15) network_setup/transformations/rbfe_Vu2025_08_1_complex_Vu2025_10_1_complex.json
+  (16) network_setup/transformations/rbfe_Vu2025_10_1_complex_Vu2025_11_1_complex.json
+  (17) network_setup/transformations/rbfe_Vu2025_02_1_solvent_Vu2025_03_1_solvent.json
+  (18) network_setup/transformations/rbfe_Vu2025_01_1_solvent_Vu2025_11_1_solvent.json
+  (19) network_setup/transformations/rbfe_Vu2025_06_1_solvent_Vu2025_04_1_solvent.json
+  (20) network_setup/transformations/rbfe_Vu2025_05_1_solvent_Vu2025_01_1_solvent.json
+  (21) network_setup/transformations/rbfe_Vu2025_22_1_solvent_Vu2025_14_1_solvent.json
+  (22) network_setup/transformations/rbfe_Vu2025_09_1_complex_Vu2025_07_1_complex.json
+  (23) network_setup/transformations/rbfe_Vu2025_02_1_solvent_Vu2025_11_1_solvent.json
+  (24) network_setup/transformations/rbfe_Vu2025_07_1_complex_Vu2025_06_1_complex.json
+  (25) network_setup/transformations/rbfe_Vu2025_06_1_complex_Vu2025_03_1_complex.json
+  (26) network_setup/transformations/rbfe_Vu2025_10_1_solvent_Vu2025_11_1_solvent.json
+  (27) network_setup/transformations/rbfe_Vu2025_21_1_solvent_Vu2025_13_1_solvent.json
+  (28) network_setup/transformations/rbfe_Vu2025_09_1_complex_Vu2025_06_1_complex.json
+  (29) network_setup/transformations/rbfe_Vu2025_22_1_solvent_Vu2025_11_1_solvent.json
+  (30) network_setup/transformations/rbfe_Vu2025_06_1_complex_Vu2025_02_1_complex.json
+  (31) network_setup/transformations/rbfe_Vu2025_01_1_complex_Vu2025_11_1_complex.json
+  (32) network_setup/transformations/rbfe_Vu2025_02_1_complex_Vu2025_01_1_complex.json
+  (33) network_setup/transformations/rbfe_Vu2025_21_1_solvent_Vu2025_14_1_solvent.json
+  (34) network_setup/transformations/rbfe_Vu2025_04_1_solvent_Vu2025_03_1_solvent.json
+  (35) network_setup/transformations/rbfe_A1JMR_complex_Vu2025_22_1_complex.json
+  (36) network_setup/transformations/rbfe_Vu2025_08_1_complex_Vu2025_13_1_complex.json
+  (37) network_setup/transformations/rbfe_Vu2025_09_1_solvent_Vu2025_06_1_solvent.json
+  (38) network_setup/transformations/rbfe_A1JMR_solvent_Vu2025_13_1_solvent.json
+  (39) network_setup/transformations/rbfe_Vu2025_07_1_solvent_Vu2025_06_1_solvent.json
+  (40) network_setup/transformations/rbfe_Vu2025_06_1_solvent_Vu2025_02_1_solvent.json
+  (41) network_setup/transformations/rbfe_Vu2025_05_1_complex_Vu2025_04_1_complex.json
+  (42) network_setup/transformations/rbfe_Vu2025_08_1_solvent_Vu2025_13_1_solvent.json
+  (43) network_setup/transformations/rbfe_Vu2025_10_1_solvent_Vu2025_13_1_solvent.json
+  (44) network_setup/transformations/rbfe_Vu2025_06_1_solvent_Vu2025_03_1_solvent.json
+  (45) network_setup/transformations/rbfe_Vu2025_02_1_complex_Vu2025_03_1_complex.json
+  (46) network_setup/transformations/rbfe_Vu2025_10_1_complex_Vu2025_13_1_complex.json
+  (47) network_setup/transformations/rbfe_Vu2025_01_1_solvent_Vu2025_03_1_solvent.json
+  (48) network_setup/transformations/rbfe_Vu2025_04_1_complex_Vu2025_03_1_complex.json
+  (49) network_setup/transformations/rbfe_Vu2025_22_1_complex_Vu2025_11_1_complex.json
+  (50) network_setup/transformations/rbfe_Vu2025_07_1_complex_Vu2025_03_1_complex.json
+  (51) network_setup/transformations/rbfe_Vu2025_05_1_complex_Vu2025_01_1_complex.json
+  (52) network_setup/transformations/rbfe_A1JMR_solvent_Vu2025_22_1_solvent.json

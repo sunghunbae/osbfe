@@ -1,0 +1,62 @@
+RBFE-NETWORK PLANNER
+______________________
+
+Parsing in Files: 
+	Got input: 
+		Small Molecules: SmallMoleculeComponent(name=A1JMR) SmallMoleculeComponent(name=Vu2025_01_1) SmallMoleculeComponent(name=Vu2025_05_1) SmallMoleculeComponent(name=Vu2025_02_1) SmallMoleculeComponent(name=Vu2025_03_1) SmallMoleculeComponent(name=Vu2025_13_1) SmallMoleculeComponent(name=Vu2025_12_1) SmallMoleculeComponent(name=Vu2025_04_1) SmallMoleculeComponent(name=Vu2025_11_1) SmallMoleculeComponent(name=Vu2025_09_1) SmallMoleculeComponent(name=Vu2025_21_1) SmallMoleculeComponent(name=Vu2025_22_1) SmallMoleculeComponent(name=Vu2025_06_1) SmallMoleculeComponent(name=Vu2025_07_1) SmallMoleculeComponent(name=Vu2025_08_1) SmallMoleculeComponent(name=Vu2025_10_1) SmallMoleculeComponent(name=Vu2025_14_1)
+		ProteinComponent: ProteinComponent(name=)
+		Cofactors: []
+		Solvent: SolventComponent(name=O, Na+, Cl-)
+
+Using Options:
+	Mapper: <KartografAtomMapper-b5e52cd8a03745cfcba064d52312ddea>
+	Mapping Scorer: <function default_lomap_score at 0x7f85b5b08ae0>
+	Network Generation: functools.partial(<function generate_minimal_spanning_network at 0x7f85b3441b20>)
+	Partial Charge Generation: am1bcc
+
+	n_protocol_repeats=1 (1 simulation repeat(s) per transformation)
+
+Planning RBFE-Campaign:
+assigning ligand partial charges -- this may be slow
+Generating charges:   0%|                                | 0/17 [00:00<?, ?it/s]Generating charges:  12%|██▊                     | 2/17 [01:22<10:20, 41.39s/it]Generating charges:  18%|████                   | 3/17 [04:53<26:10, 112.15s/it]Generating charges:  24%|█████▍                 | 4/17 [10:48<43:55, 202.75s/it]Generating charges:  29%|██████▊                | 5/17 [12:25<33:10, 165.84s/it]Generating charges:  35%|████████               | 6/17 [15:00<29:43, 162.11s/it]Generating charges:  41%|█████████▍             | 7/17 [18:10<28:30, 171.06s/it]Generating charges:  47%|██████████▊            | 8/17 [20:04<22:59, 153.26s/it]Generating charges:  53%|████████████▏          | 9/17 [21:26<17:29, 131.22s/it]Generating charges:  59%|████████████▉         | 10/17 [25:38<19:38, 168.30s/it]Generating charges:  65%|██████████████▏       | 11/17 [29:51<19:24, 194.09s/it]Generating charges:  71%|███████████████▌      | 12/17 [34:14<17:54, 214.91s/it]Generating charges:  76%|████████████████▊     | 13/17 [38:17<14:53, 223.46s/it]Generating charges:  82%|██████████████████    | 14/17 [41:44<10:55, 218.39s/it]Generating charges:  88%|███████████████████▍  | 15/17 [44:06<06:30, 195.42s/it]Generating charges:  94%|████████████████████▋ | 16/17 [46:02<02:51, 171.62s/it]Generating charges: 100%|██████████████████████| 17/17 [48:18<00:00, 160.72s/it]Generating charges: 100%|██████████████████████| 17/17 [48:18<00:00, 170.47s/it]
+Mapping:  49%|████▊     | 66/136 [00:01<00:01, 43.74it/s]Mapping:  53%|█████▎    | 72/136 [00:01<00:01, 44.60it/s]Mapping:  57%|█████▋    | 77/136 [00:01<00:01, 44.85it/s]Mapping:  60%|██████    | 82/136 [00:01<00:01, 45.25it/s]Mapping:  64%|██████▍   | 87/136 [00:01<00:01, 45.52it/s]Mapping:  68%|██████▊   | 92/136 [00:02<00:00, 45.81it/s]Mapping:  72%|███████▏  | 98/136 [00:02<00:00, 48.23it/s]Mapping:  76%|███████▋  | 104/136 [00:02<00:00, 48.73it/s]Mapping:  81%|████████  | 110/136 [00:02<00:00, 30.85it/s]Mapping:  85%|████████▌ | 116/136 [00:02<00:00, 34.72it/s]Mapping:  89%|████████▉ | 121/136 [00:02<00:00, 36.37it/s]Mapping:  93%|█████████▎| 126/136 [00:03<00:00, 38.38it/s]Mapping:  97%|█████████▋| 132/136 [00:03<00:00, 42.09it/s]Mapping: 100%|██████████| 136/136 [00:03<00:00, 42.49it/s]
+	Done
+
+Output:
+	Saving to: /home2/shbae/devel/osbfe/openfe/am1bcc/network_setup
+		- network_setup.json
+		- ligand_network.graphml
+				- rbfe_Vu2025_09_1_solvent_Vu2025_07_1_solvent.json
+				- rbfe_Vu2025_04_1_complex_Vu2025_11_1_complex.json
+				- rbfe_Vu2025_01_1_solvent_Vu2025_05_1_solvent.json
+				- rbfe_Vu2025_01_1_complex_Vu2025_05_1_complex.json
+				- rbfe_Vu2025_11_1_solvent_Vu2025_14_1_solvent.json
+				- rbfe_Vu2025_04_1_solvent_Vu2025_11_1_solvent.json
+				- rbfe_Vu2025_11_1_complex_Vu2025_14_1_complex.json
+				- rbfe_Vu2025_11_1_solvent_Vu2025_22_1_solvent.json
+				- rbfe_Vu2025_01_1_solvent_Vu2025_03_1_solvent.json
+				- rbfe_Vu2025_01_1_solvent_Vu2025_02_1_solvent.json
+				- rbfe_Vu2025_13_1_solvent_Vu2025_22_1_solvent.json
+				- rbfe_Vu2025_01_1_complex_Vu2025_02_1_complex.json
+				- rbfe_Vu2025_21_1_solvent_Vu2025_22_1_solvent.json
+				- rbfe_A1JMR_complex_Vu2025_22_1_complex.json
+				- rbfe_Vu2025_03_1_solvent_Vu2025_06_1_solvent.json
+				- rbfe_Vu2025_11_1_complex_Vu2025_10_1_complex.json
+				- rbfe_Vu2025_03_1_solvent_Vu2025_07_1_solvent.json
+				- rbfe_Vu2025_11_1_complex_Vu2025_22_1_complex.json
+				- rbfe_Vu2025_03_1_complex_Vu2025_07_1_complex.json
+				- rbfe_Vu2025_02_1_solvent_Vu2025_11_1_solvent.json
+				- rbfe_Vu2025_11_1_solvent_Vu2025_10_1_solvent.json
+				- rbfe_Vu2025_02_1_complex_Vu2025_11_1_complex.json
+				- rbfe_Vu2025_13_1_complex_Vu2025_08_1_complex.json
+				- rbfe_Vu2025_21_1_complex_Vu2025_22_1_complex.json
+				- rbfe_Vu2025_03_1_complex_Vu2025_06_1_complex.json
+				- rbfe_Vu2025_13_1_complex_Vu2025_22_1_complex.json
+				- rbfe_Vu2025_13_1_solvent_Vu2025_08_1_solvent.json
+				- rbfe_Vu2025_09_1_complex_Vu2025_07_1_complex.json
+				- rbfe_Vu2025_01_1_complex_Vu2025_03_1_complex.json
+				- rbfe_Vu2025_13_1_solvent_Vu2025_12_1_solvent.json
+				- rbfe_Vu2025_13_1_complex_Vu2025_12_1_complex.json
+				- rbfe_A1JMR_solvent_Vu2025_22_1_solvent.json
+	Duration: 0:48:30.526655
+

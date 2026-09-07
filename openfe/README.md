@@ -6,8 +6,106 @@ $ mamba activate openfe
 $ pip install mdworks
 ```
 
+# Network Setup
 
-## Console Output (without `--n-protocol-repeats 1`)
+1. Use apo receptor structure
+1. Ligands should include reference molecule in RBFE
+1. Use `--n-protocol-repeats 1`
+
+## Using NAGL charge (est. <3 min)
+
+```sh
+$ cd openfe/nagl
+$ openfe plan-rbfe-network \
+	-M ../../Vu2025/Vu2025_and_A1JMR.sdf \
+	-p ../../Vu2025/9S9O-clean_complex_apo.cif \
+	-o network_setup \
+	--n-protocol-repeats 1 \
+	-s settings.yaml
+
+#<setttings.yaml>
+
+mapper:
+    method: kartograf
+    settings:
+        #atom_max_distance: 0.95
+        atom_max_distance: 1.15
+        atom_map_hydrogens: true
+        map_hydrogens_on_hydrogens_only: true
+        map_exact_ring_matches_only: true
+        allow_partial_fused_rings: true
+        allow_bond_breaks: false
+
+network:
+    method: generate_minimal_spanning_network
+
+partial_charge:
+    # method: am1bcc
+    # method: am1bccelf10
+    # method: espaloma
+    method: nagl
+    settings:
+        # off_toolkit_backend: ambertools
+        # off_toolkit_backend: openeye  # required for the am1bccelf10 method
+        number_of_conformers: null  # null specifies the use of the input conformer, a value requests that a new conformer be generated
+        nagl_model: null  # null specifies the use of the latest nagl model
+```
+
+## Using AM1BCC charge (est. 20-40 min)
+
+```sh
+$ nohup openfe plan-rbfe-network \
+	-M ../../Vu2025/Vu2025_and_A1JMR.sdf \
+	-p ../../Vu2025/9S9O-clean_complex_apo.cif \
+	--n-protocol-repeats 1 \
+	-o network_setup \
+	-s settings.yaml &
+
+
+#<settings.yaml>
+
+mapper:
+    method: kartograf
+    settings:
+        #atom_max_distance: 0.95
+        atom_max_distance: 1.15
+        atom_map_hydrogens: true
+        map_hydrogens_on_hydrogens_only: true
+        map_exact_ring_matches_only: true
+        allow_partial_fused_rings: true
+        allow_bond_breaks: false
+
+network:
+    method: generate_minimal_spanning_network
+
+partial_charge:
+    method: am1bcc
+    # method: am1bccelf10
+    # method: espaloma
+    #method: nagl
+    settings:
+        # off_toolkit_backend: ambertools
+        # off_toolkit_backend: openeye  # required for the am1bccelf10 method
+        number_of_conformers: null  # null specifies the use of the input conformer, a value requests that a new conformer be generated
+        nagl_model: null  # null specifies the use of the latest nagl model
+```
+
+## Using Orion edgemapper output with NAGL charges
+
+```sh
+$ cd  orion_nagl/
+$ python plan_oe_network.py
+```
+
+## Using Orin edgemapper outout with AM1BCC charges
+
+```sh
+$ cd origon_am1bcc/
+$ nohup python plan_oe_network.py &
+```
+
+
+## About `--n-protocol-repeats 1`
 
 If we set up the network by `openfe plan-rbfe-network -M <ligands.sdf> -p <protein.pdb> -o network_setup/` 
 without `--n-protocol-repeats 1` option, default behavior is to run 3 replicate simulations in a set and report dG.
@@ -67,76 +165,4 @@ Here is the result:
 
 
 	Duration: 9:27:16.584682
-```
-
-
-# Network Setup
-
-## am1bcc and nagl
-
-```bash
-openfe plan-rbfe-network \
-    -M ../Vu2025/Vu2025_9s9o_posit_docked.sdf \
-    -p ../Vu2025/9S9O-clean_complex_apo.cif \
-    --n-protocol-repeats 1 \
-    -o network_setup \
-    -s settings.yaml
-```
-
-### am1bcc `settings.yaml`
-
-```sh
-mapper:
-    method: kartograf
-    settings:
-        #atom_max_distance: 0.95
-        atom_max_distance: 1.15
-        atom_map_hydrogens: true
-        map_hydrogens_on_hydrogens_only: true
-        map_exact_ring_matches_only: true
-        allow_partial_fused_rings: true
-        allow_bond_breaks: false
-
-network:
-    method: generate_minimal_spanning_network
-
-partial_charge:
-    method: am1bcc
-    # method: am1bccelf10
-    # method: espaloma
-    #method: nagl
-    settings:
-        # off_toolkit_backend: ambertools
-        # off_toolkit_backend: openeye  # required for the am1bccelf10 method
-        number_of_conformers: null  # null specifies the use of the input conformer, a value requests that a new conformer be generated
-        nagl_model: null  # null specifies the use of the latest nagl model
-```
-
-### nagl `setttings.yaml`
-
-```sh
-mapper:
-    method: kartograf
-    settings:
-        #atom_max_distance: 0.95
-        atom_max_distance: 1.15
-        atom_map_hydrogens: true
-        map_hydrogens_on_hydrogens_only: true
-        map_exact_ring_matches_only: true
-        allow_partial_fused_rings: true
-        allow_bond_breaks: false
-
-network:
-    method: generate_minimal_spanning_network
-
-partial_charge:
-    # method: am1bcc
-    # method: am1bccelf10
-    # method: espaloma
-    method: nagl
-    settings:
-        # off_toolkit_backend: ambertools
-        # off_toolkit_backend: openeye  # required for the am1bccelf10 method
-        number_of_conformers: null  # null specifies the use of the input conformer, a value requests that a new conformer be generated
-        nagl_model: null  # null specifies the use of the latest nagl model
 ```
