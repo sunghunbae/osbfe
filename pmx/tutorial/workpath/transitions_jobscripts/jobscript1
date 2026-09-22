@@ -1,0 +1,21 @@
+#$ -S /bin/bash
+#$ -N lig_['18625-1', '18626-1']_stateA_2_transitions
+#$ -l h_rt=24:00:00
+#$ -cwd
+#$ -pe *_fast 2
+#$ -l gpu=1
+
+
+source /etc/profile.d/modules.sh
+source /usr/local/gromacs/GMXRC2018
+
+module load shared
+module load owl/intel-mpi-default
+module load cuda91
+
+
+export GMXRUN="mdrun_threads -ntomp 2 -ntmpi 1"
+cd $TMPDIR
+cp workpath/['18625-1', '18626-1']/water/stateA/run2/transitions/ti$SGE_TASK_ID.tpr tpr.tpr
+$GMXRUN -s tpr.tpr -dhdl dhdl$SGE_TASK_ID.xvg
+cp dhdl$SGE_TASK_ID.xvg workpath/['18625-1', '18626-1']/water/stateA/run2/transitions/.

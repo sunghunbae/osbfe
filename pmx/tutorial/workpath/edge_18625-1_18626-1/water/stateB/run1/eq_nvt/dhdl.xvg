@@ -1,0 +1,19 @@
+# This file was created Mon Sep 21 14:26:21 2026
+# Created by:
+#                      :-) GROMACS - gmx mdrun, 2026.3 (-:
+# 
+# Executable:   /home2/shbae/local/gromacs/bin/gmx
+# Data prefix:  /home2/shbae/local/gromacs
+# Working dir:  /home2/shbae/devel/osbfe/pmx/tutorial
+# Command line:
+#   gmx mdrun -s /home2/shbae/devel/osbfe/pmx/tutorial/workpath/edge_18625-1_18626-1/water/stateB/run1/eq_nvt/tpr.tpr -e /home2/shbae/devel/osbfe/pmx/tutorial/workpath/edge_18625-1_18626-1/water/stateB/run1/eq_nvt/ener.edr -c /home2/shbae/devel/osbfe/pmx/tutorial/workpath/edge_18625-1_18626-1/water/stateB/run1/eq_nvt/confout.gro -x /home2/shbae/devel/osbfe/pmx/tutorial/workpath/edge_18625-1_18626-1/water/stateB/run1/eq_nvt/traj_comp.xtc -o /home2/shbae/devel/osbfe/pmx/tutorial/workpath/edge_18625-1_18626-1/water/stateB/run1/eq_nvt/traj.trr -cpo /home2/shbae/devel/osbfe/pmx/tutorial/workpath/edge_18625-1_18626-1/water/stateB/run1/eq_nvt/state.cpt -g /home2/shbae/devel/osbfe/pmx/tutorial/workpath/edge_18625-1_18626-1/water/stateB/run1/eq_nvt/md.log -dhdl /home2/shbae/devel/osbfe/pmx/tutorial/workpath/edge_18625-1_18626-1/water/stateB/run1/eq_nvt/dhdl.xvg
+# gmx mdrun is part of G R O M A C S:
+#
+# Guyana Rwanda Oman Macau Angola Cameroon Senegal
+#
+@    title "dH/d\xl\f{}"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "dH/d\xl\f{} (kJ/mol [\xl\f{}]\S-1\N)"
+@TYPE xy
+@ subtitle "T = 298 (K) \xl\f{} = 1.0000"
+0.0000 -383.00757

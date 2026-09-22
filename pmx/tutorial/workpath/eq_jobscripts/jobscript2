@@ -1,0 +1,14 @@
+#$ -S /bin/bash
+#$ -N lig_edge_18625-1_18626-1_stateA_2_eq
+#$ -l h_rt=24:00:00
+#$ -cwd
+#$ -pe *_fast 8
+#$ -l gpu=1
+
+
+
+
+
+export GMXRUN="gmx mdrun -ntomp 8 -ntmpi 1"
+cd /home2/shbae/devel/osbfe/pmx/tutorial/workpath/edge_18625-1_18626-1/water/stateA/run2/eq
+$GMXRUN -s tpr.tpr
