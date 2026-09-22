@@ -6,6 +6,16 @@ $ mamba activate openfe
 $ pip install mdworks
 ```
 
+# Prepared Dataset Ready to Run
+
+| Folder | Network Setup | Atomic Charge | Note |
+| ------ | ------------- | ------------- | ---- |
+| `am1bcc` | OpenFE default | AM1BCC | OpenFE default setting |
+| `nagl` | OpenFE default | NAGL | |
+| `orion_am1bcc` | OpenEye Orion OE-LOMAP | AM1BCC | Use this dataset for OE comparison |
+| `orion_nagl` | OpenEye Orion OE-LOMAP | NAGL | |
+
+
 # Network Setup
 
 1. Use apo receptor structure
