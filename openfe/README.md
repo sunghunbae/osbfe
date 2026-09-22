@@ -16,6 +16,43 @@ $ pip install mdworks
 | `orion_nagl` | OpenEye Orion OE-LOMAP | NAGL | |
 
 
+## Run the simulations
+
+Below is an example of individual run using `openfe quickrun` command:
+
+```sh
+$ cd orion_am1bcc/
+$ openfe quickrun \
+       network_setup/transformations/rbfe_Vu2025_01_1_complex_Vu2025_05_1_complex.json \
+       -o one/one_results.json \
+       -d one
+```
+
+Below is an example of simple SLURM job script:
+
+```sh
+for file in network_setup/transformations/*.json; do
+  relpath=${file:30}  # strip off "network_setup/transformations/"
+  dirpath=${relpath%.*}  # strip off final ".json"
+  for repeat in {1..3}; do
+      jobpath="network_setup/transformations/${dirpath}_${repeat}.job"
+      cmd="openfe quickrun $file -o results/repeat${repeat}/$relpath -d results/repeat${repeat}/$dirpath"
+      echo -e "#!/usr/bin/env bash\n${cmd}" > $jobpath
+      sbatch $jobpath
+  done
+done
+```
+
+## Gather the results
+
+To gather all the $\Delta$G estimates into a single file, use `openfe gather` command from within the
+working directory:
+
+```sh
+openfe gather results/ --report dg -o final_results.tsv
+```
+
+
 # Network Setup
 
 1. Use apo receptor structure
