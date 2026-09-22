@@ -2,9 +2,11 @@
 
 Considered Open-Source Frameworks
 
-1. OpenFE [github](https://github.com/OpenFreeEnergy/openfe) - Equilibrium method
-1. PMX [github](https://github.com/degrootlab/pmx) - Non-Equilibrium method
-1. Timemachine [github](https://github.com/proteneer/timemachine)
+| Framework | MD Engine | Remarks | License |
+| --------- | --------- | ------- | ------- |
+| [OpenFE](https://github.com/OpenFreeEnergy/openfe) | OpenMM | Equilibrium method | MIT license |
+| [PMX](https://github.com/degrootlab/pmx) | Gromacs | Non-Equilibrium method | LGPL-3.0 |
+| [Timemachine](https://github.com/proteneer/timemachine) | OpenMM | | Apache License, Version 2.0 |
 
 
 # Test Dataset
