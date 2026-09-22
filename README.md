@@ -6,7 +6,6 @@ Considered Open-Source Frameworks
 | --------- | --------- | ------- | ------- |
 | [OpenFE](https://github.com/OpenFreeEnergy/openfe) | OpenMM | Equilibrium method | MIT license |
 | [PMX](https://github.com/degrootlab/pmx) | Gromacs | Non-Equilibrium method | LGPL-3.0 |
-| [Timemachine](https://github.com/proteneer/timemachine) | OpenMM | | Apache License, Version 2.0 |
 
 
 # Test Dataset
