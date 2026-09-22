@@ -1,6 +1,4 @@
-# Open-Source Binding Free Energy
-
-Considered Open-Source Frameworks
+# Open-Source Binding Free Energy Frameworks
 
 | Framework | MD Engine | Remarks | License |
 | --------- | --------- | ------- | ------- |
