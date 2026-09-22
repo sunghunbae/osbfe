@@ -1,4 +1,13 @@
-# Vu2025/
+# Open-Source Binding Free Energy
+
+Considered Open-Source Frameworks
+
+1. OpenFE [github](https://github.com/OpenFreeEnergy/openfe) - Equilibrium method
+1. PMX [github](https://github.com/degrootlab/pmx) - Non-Equilibrium method
+1. Timemachine [github](https://github.com/proteneer/timemachine)
+
+
+# Test Dataset
 
 ## Reference protein-ligand complex 
 
@@ -9,37 +18,17 @@ Vu BT, Dominique R, Fahr BJ, Li HH, Fry DC, Xu L, Yang H, Puzio-Kuter A, Good A,
 
 ## Receptor
 
-The protein-ligand complex structures were processed by [mdworks](https://github.com/sunghunbae/mdworks). Remove the rezataopopt from `9S9O-clean_complex_relaxed.cif.gz` or `9S9O-clean_complex_relaxed.pdb.gz` and use as receptor for OpenFE.
+The protein-ligand complex structures were processed by [mdworks](https://github.com/sunghunbae/mdworks). Remove the rezataopopt from `9S9O-clean_complex_relaxed.cif.gz` or `9S9O-clean_complex_relaxed.pdb.gz` (see below)
 
 ```sh
-$ pip install mdworks
-```
-
-```sh
-# 9S9P
-$ mdworks ready 9S9P-clean.cif --ligand A1JMR
-
-$ mdworks relax 9S9P-clean_complex.cif --ligand A1JMR
-# target output files:
-#    9S9P-clean_complex_relaxed.cif.gz 
-#    9S9P-clean_complex_relaxed.pdb.gz 
-
-$ mdworks delete 9S9P-clean_complex_relaxed.cif.gz A1JMR --tag apo
-2026-07-28 11:17:INFO:mdworks.editor:select residues: {'C': 1} (70 atoms)
-2026-07-28 11:17:INFO:mdworks.editor:remove selected
-2026-07-28 11:17:INFO:mdworks.editor:write to 9S9P-clean_complex_relaxed_apo.cif
-
-# target output file:
-#    9S9P-clean_complex_relaxed_apo.cif
-
 # 9S9O
+$ pip install mdworks
+$ cd Vu2025/
 $ mdworks ready 9S9O-clean.cif --ligand A1JMR
-
 $ mdworks relax 9S9O-clean_complex.cif --ligand A1JMR
 # output files:
 #    9S9O-clean_complex_relaxed.cif.gz 
 #    9S9O-clean_complex_relaxed.pdb.gz 
-
 $ mdworks delete 9S9O-clean_complex_relaxed.cif.gz A1JMR --tag apo
 2026-07-28 11:17:INFO:mdworks.editor:select residues: {'C': 1} (70 atoms)
 2026-07-28 11:17:INFO:mdworks.editor:remove selected
@@ -52,5 +41,5 @@ Rezatapopt hit-to-lead series were extracted from Vu2025 (see `Vu2025.smi`)
 
 | Ligands | Method | Receptor |
 | ------- | ------ | -------- |
+| Vu20205_and_A1JMR.sdf | OE POSIT | Included both the reference and subject compounds. Use this file as ligands input |
 | Vu2025_posit_docked.sdf  | OE POSIT  | 9S9O; no relax;`-outputall`; FE-NES floe |
-| Vu20205_and_A1JMR.sdf | | |
