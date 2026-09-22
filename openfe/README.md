@@ -155,8 +155,8 @@ $ nohup python plan_oe_network.py &
 ## About `--n-protocol-repeats 1`
 
 If we set up the network by `openfe plan-rbfe-network -M <ligands.sdf> -p <protein.pdb> -o network_setup/` 
-without `--n-protocol-repeats 1` option, default behavior is to run 3 replicate simulations in a set and report dG.
-Because each MD is independent, using `--n-protocol-repeats 1` is more compute-efficient.
+without `--n-protocol-repeats 1` option, default behavior is to run 3 replicate simulations in a set and report $\Delta G$.
+Because each MD simulation is independent, using `--n-protocol-repeats 1` is more compute-efficient for parallel simulations.
 
 Note: openfe’s default behaviour is to use three repeats to calculate the uncertainty (i.e. standard deviation) in an estimate. When setting `--n-protocol-repeats 1`, you must execute the transformation multiple times - at minimum 2, but best practice is 3 independent repeats.
 
