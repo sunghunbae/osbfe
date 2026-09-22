@@ -9,7 +9,8 @@ Considered Open-Source Frameworks
 
 # Test Dataset
 
-## Reference protein-ligand complex 
+
+## Reference protein-ligand complex, Vu2025
 
 Crystal structure of p53 Y220C mutant in complex with Rezatapopt (PDB id: 9S9O, ligand residue name: A1JMR)
 
