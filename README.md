@@ -18,7 +18,7 @@ Vu BT, Dominique R, Fahr BJ, Li HH, Fry DC, Xu L, Yang H, Puzio-Kuter A, Good A,
 
 ## Receptor
 
-The protein-ligand complex structures were processed by [mdworks](https://github.com/sunghunbae/mdworks). Remove the rezataopopt from `9S9O-clean_complex_relaxed.cif.gz` or `9S9O-clean_complex_relaxed.pdb.gz` (see below)
+The protein-ligand complex structures were processed by [mdworks](https://github.com/sunghunbae/mdworks) (see below). Use `9S9O-clean_complex_relaxed_apo.pdb` or `9S9O-clean_complex_relaxed_apo.cif` for ligand-removed or apo protein structure.
 
 ```sh
 # 9S9O
@@ -37,9 +37,9 @@ $ mdworks delete 9S9O-clean_complex_relaxed.cif.gz A1JMR --tag apo
 
 ## Ligands
 
-Rezatapopt hit-to-lead series were extracted from Vu2025 (see `Vu2025.smi`)
+Rezatapopt hit-to-lead series were extracted from Vu2025 (see `Vu2025.smi`). Use `Vu20205_and_A1JMR.sdf` for ligands input which contains both the reference (Rezatapopt) and compounds series.
 
-| Ligands | Method | Receptor |
-| ------- | ------ | -------- |
-| Vu20205_and_A1JMR.sdf | OE POSIT | Included both the reference and subject compounds. Use this file as ligands input |
-| Vu2025_posit_docked.sdf  | OE POSIT  | 9S9O; no relax;`-outputall`; FE-NES floe |
+| Ligands | Note |
+| ------- | ---- |
+| Vu20205_and_A1JMR.sdf | Included both the reference and subject compounds. Use this file as ligands input |
+| Vu2025_posit_docked.sdf | OE POSIT with 9S9O as receptor; no relax;`-outputall`|
