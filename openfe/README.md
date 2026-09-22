@@ -45,7 +45,7 @@ done
 
 ## Gather the results
 
-To gather all the $\Delta$G estimates into a single file, use `openfe gather` command from within the
+To gather all the $\Delta G$ estimates into a single file, use `openfe gather` command from within the
 working directory:
 
 ```sh
